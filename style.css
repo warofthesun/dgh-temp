@@ -8,4 +8,40 @@ Template: twentytwentyone
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+GitHub Theme URI: warofthesun/dgh-temp
 */
+
+
+.links-list {
+	padding: 0;
+	list-style: none;
+}
+
+.links-list a {
+	text-decoration: none;
+}
+
+.links-list li {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+.links-list .album-details {
+	padding-top: 2em;
+}
+
+@media only screen and (min-width: 782px) {
+	.links-list li {
+		flex-direction: row;
+	}
+	.links-list .cover-art {
+		max-width: 30%;
+	}
+	
+	.links-list .album-details {
+		padding-top: 0;
+		padding-left: 2em;
+	}
+}
+
